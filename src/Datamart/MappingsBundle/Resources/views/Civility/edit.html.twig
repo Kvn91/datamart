@@ -1,0 +1,19 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier un mapping Civility - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+
+    <h2>Modifier un mapping Civility</h2>
+
+    {{ include("DatamartMappingsBundle::form.html.twig") }}
+
+    <p>
+        <a href="{{ path('datamart_mappings_civility') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste des mappings Civility
+        </a>
+    </p>
+{% endblock %}

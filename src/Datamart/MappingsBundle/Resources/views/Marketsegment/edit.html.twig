@@ -1,0 +1,19 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier un mapping Market Segment - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+
+    <h2>Modifier un mapping Market Segment</h2>
+
+    {{ include("DatamartMappingsBundle::form.html.twig") }}
+
+    <p>
+        <a href="{{ path('datamart_mappings_marketsegment') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste des mappings Market Segment
+        </a>
+    </p>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Supprimer un Civility - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+
+    <h2>Supprimer un Civility</h2>
+
+    <p>
+        Etes-vous certain de vouloir supprimer le Civility "{{ civility.originalField }}" ?
+    </p>
+
+    <form action="{{ path('datamart_mappings_civility_delete', {'id': civility.id}) }}" method="post">
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {{ form_end(form) }}
+    <br/>
+    <p>
+        <a href="{{ path('datamart_mappings_civility') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste de Civilities
+        </a>
+    </p>
+{% endblock %}

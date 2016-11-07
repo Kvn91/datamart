@@ -1,0 +1,19 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier un mapping Room Type - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+
+    <h2>Modifier un mapping Room Type</h2>
+
+    {{ include("DatamartMappingsBundle::form.html.twig") }}
+
+    <p>
+        <a href="{{ path('datamart_mappings_roomtype') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste des mappings Room Type
+        </a>
+    </p>
+{% endblock %}

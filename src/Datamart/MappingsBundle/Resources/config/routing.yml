@@ -1,0 +1,269 @@
+datamart_mappings_channel:
+    path:     /channel/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Channel:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_channel_add:
+    path:     /channel/add
+    defaults:
+        _controller: DatamartMappingsBundle:Channel:add
+
+datamart_mappings_channel_edit:
+    path:     /channel/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Channel:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_channel_delete:
+    path:     /channel/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Channel:delete
+    requirements:
+        id: \d+
+
+datamart_mappings_civility:
+    path:     /civility/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Civility:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_civility_add:
+    path:     /civility/add
+    defaults:
+        _controller: DatamartMappingsBundle:Civility:add
+
+datamart_mappings_civility_edit:
+    path:     /civility/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Civility:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_civility_delete:
+    path:     /civility/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Civility:delete
+    requirements:
+        id: \d+
+
+datamart_mappings_country:
+    path:     /country/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Country:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_country_add:
+    path:     /country/add
+    defaults:
+        _controller: DatamartMappingsBundle:Country:add
+
+datamart_mappings_country_edit:
+    path:     /country/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Country:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_country_delete:
+    path:     /country/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Country:delete
+    requirements:
+        id: \d+
+
+datamart_mappings_marketsegment:
+    path:     /marketsegment/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Marketsegment:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_marketsegment_add:
+    path:     /marketsegment/add
+    defaults:
+        _controller: DatamartMappingsBundle:Marketsegment:add
+
+datamart_mappings_marketsegment_edit:
+    path:     /marketsegment/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Marketsegment:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_marketsegment_delete:
+    path:     /marketsegment/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Marketsegment:delete
+    requirements:
+        id: \d+
+
+datamart_mappings_ratecategory:
+    path:     /ratecategory/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Ratecategory:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_ratecategory_add:
+    path:     /ratecategory/add
+    defaults:
+        _controller: DatamartMappingsBundle:Ratecategory:add
+
+datamart_mappings_ratecategory_edit:
+    path:     /ratecategory/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Ratecategory:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_ratecategory_delete:
+    path:     /ratecategory/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Ratecategory:delete
+    requirements:
+        id: \d+
+
+datamart_mappings_ratecode:
+    path:     /ratecode/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Ratecode:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_ratecode_add:
+    path:     /ratecode/add
+    defaults:
+        _controller: DatamartMappingsBundle:Ratecode:add
+
+datamart_mappings_ratecode_edit:
+    path:     /ratecode/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Ratecode:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_ratecode_delete:
+    path:     /ratecode/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Ratecode:delete
+    requirements:
+        id: \d+
+
+datamart_mappings_reservationstatus:
+    path:     /reservationstatus/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Reservationstatus:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_reservationstatus_add:
+    path:     /reservationstatus/add
+    defaults:
+        _controller: DatamartMappingsBundle:Reservationstatus:add
+
+datamart_mappings_reservationstatus_edit:
+    path:     /reservationstatus/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Reservationstatus:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_reservationstatus_delete:
+    path:     /reservationstatus/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Reservationstatus:delete
+    requirements:
+        id: \d+
+
+datamart_mappings_roomtype:
+    path:     /roomtype/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Roomtype:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_roomtype_add:
+    path:     /roomtype/add
+    defaults:
+        _controller: DatamartMappingsBundle:Roomtype:add
+
+datamart_mappings_roomtype_edit:
+    path:     /roomtype/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Roomtype:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_roomtype_delete:
+    path:     /roomtype/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Roomtype:delete
+    requirements:
+        id: \d+
+
+datamart_mappings_source:
+    path:     /source/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Source:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_source_add:
+    path:     /source/add
+    defaults:
+        _controller: DatamartMappingsBundle:Source:add
+
+datamart_mappings_source_edit:
+    path:     /source/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Source:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_source_delete:
+    path:     /source/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Source:delete
+    requirements:
+        id: \d+
+
+datamart_mappings_travelagent:
+    path:     /travelagent/{page}
+    defaults:
+        _controller: DatamartMappingsBundle:Travelagent:index
+        page:        1
+    requirements:
+        page: \d+
+
+datamart_mappings_travelagent_add:
+    path:     /travelagent/add
+    defaults:
+        _controller: DatamartMappingsBundle:Travelagent:add
+
+datamart_mappings_travelagent_edit:
+    path:     /travelagent/edit/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Travelagent:edit
+    requirements:
+        id: \d+
+
+datamart_mappings_travelagent_delete:
+    path:     /travelagent/delete/{id}
+    defaults:
+        _controller: DatamartMappingsBundle:Travelagent:delete
+    requirements:
+        id: \d+

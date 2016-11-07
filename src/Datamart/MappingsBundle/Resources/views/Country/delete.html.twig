@@ -1,0 +1,25 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Supprimer un Country - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+
+    <h2>Supprimer un Country</h2>
+
+    <p>
+        Etes-vous certain de vouloir supprimer le Country "{{ country.originalField }}" ?
+    </p>
+
+    <form action="{{ path('datamart_mappings_country_delete', {'id': country.id}) }}" method="post">
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {{ form_end(form) }}
+    <br/>
+    <p>
+        <a href="{{ path('datamart_mappings_country') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste de Countries
+        </a>
+    </p>
+{% endblock %}

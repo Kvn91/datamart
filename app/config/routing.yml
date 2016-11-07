@@ -1,0 +1,11 @@
+datamart_core:
+    resource: "@DatamartCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+datamart_mappings:
+    resource: "@DatamartMappingsBundle/Resources/config/routing.yml"
+    prefix:   /mappings/
+
+datamart_infos:
+    resource: "@DatamartInfosBundle/Resources/config/routing.yml"
+    prefix:   /infos/

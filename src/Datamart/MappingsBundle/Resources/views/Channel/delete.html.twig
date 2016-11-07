@@ -1,0 +1,25 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Supprimer un Channel - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+
+    <h2>Supprimer un Channel</h2>
+
+    <p>
+        Etes-vous certain de vouloir supprimer le Channel "{{ channel.originalField }}" ?
+    </p>
+
+    <form action="{{ path('datamart_mappings_channel_delete', {'id': channel.id}) }}" method="post">
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {{ form_end(form) }}
+    <br/>
+    <p>
+        <a href="{{ path('datamart_mappings_channel') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste de Channels
+        </a>
+    </p>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier un mapping Channel - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+
+    <h2>Modifier un mapping Channel</h2>
+
+    {{ include("DatamartMappingsBundle:form.html.twig") }}
+
+    <p>
+        <a href="{{ path('datamart_mappings_channel') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste des mappings Channel
+        </a>
+    </p>
+{% endblock %}

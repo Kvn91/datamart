@@ -1,0 +1,19 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier un mapping Rate Category - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+
+    <h2>Modifier un mapping Rate Category</h2>
+
+    {{ include("DatamartMappingsBundle::form.html.twig") }}
+
+    <p>
+        <a href="{{ path('datamart_mappings_ratecategory') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste des mappings Rate Category
+        </a>
+    </p>
+{% endblock %}

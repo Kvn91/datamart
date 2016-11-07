@@ -1,0 +1,7 @@
+datamart_homepage:
+    path:     /
+    defaults: { _controller: DatamartCoreBundle:Core:home }
+
+datamart_search:
+    path:     /search/
+    defaults: { _controller: DatamartCoreBundle:Core:search }

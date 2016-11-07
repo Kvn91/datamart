@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Pool-Inn | La data des srab{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="Stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
+            <link rel="stylesheet" href="{{ asset('bundles/datamartmappings/css/style.css') }}">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>POOL-INN</h1>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="{{ path('datamart_homepage') }}">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mappings <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{ path('datamart_mappings_ratecode') }}">Rate Code</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ path('datamart_mappings_ratecategory') }}">Rate Category</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ path('datamart_mappings_channel') }}">Channel</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ path('datamart_mappings_source') }}">Source</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ path('datamart_mappings_marketsegment') }}">Market Segment</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ path('datamart_mappings_roomtype') }}">Room Type</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ path('datamart_mappings_reservationstatus') }}">Reservation Status</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ path('datamart_mappings_travelagent') }}">Travel Agent</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ path('datamart_mappings_country') }}">Country</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ path('datamart_mappings_civility') }}">Civility</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        {{ render(controller("DatamartCoreBundle:Core:search")) }}
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+
+            <div class="row">
+                <div id="content" class="col-md-12">
+                    {% block body %}
+                    {% endblock %}
+                </div>
+            </div>
+            {% block javascripts %}
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+                <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            {% endblock %}
+        </div>
+    </body>
+</html>

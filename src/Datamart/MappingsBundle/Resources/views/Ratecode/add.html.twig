@@ -1,0 +1,18 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Ajouter un mapping Rate Code - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+    <h2>Ajouter un mapping Rate Code</h2>
+
+    {{ include("DatamartMappingsBundle::form.html.twig") }}
+
+    <p>
+        <a href="{{ path('datamart_mappings_channel') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste de mappings Rate Code
+        </a>
+    </p>
+{% endblock %}

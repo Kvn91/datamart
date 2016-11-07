@@ -1,0 +1,25 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block title %}
+    Supprimer un Rate Code - {{ parent() }}
+{% endblock %}
+
+{% block datamartmappings_body %}
+
+    <h2>Supprimer un Rate Code</h2>
+
+    <p>
+        Etes-vous certain de vouloir supprimer le Rate Code "{{ ratecode.originalField }}" ?
+    </p>
+
+    <form action="{{ path('datamart_mappings_ratecode_delete', {'id': ratecode.id}) }}" method="post">
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {{ form_end(form) }}
+    <br/>
+    <p>
+        <a href="{{ path('datamart_mappings_ratecode') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste de Rate Codes
+        </a>
+    </p>
+{% endblock %}

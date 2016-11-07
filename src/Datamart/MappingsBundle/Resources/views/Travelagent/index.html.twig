@@ -1,0 +1,43 @@
+{% extends "DatamartMappingsBundle::layout.html.twig" %}
+
+{% block datamartmappings_body %}
+    <div>
+        {% for message in app.session.flashbag.get('notice') %}
+            <p>Message flash : {{ message }}</p>
+        {% endfor %}
+    </div>
+    <h2 class="col-md-8">Liste des mappings Travel Agent</h2>
+    <a href="{{ path('datamart_mappings_travelagent_add') }}"  class="btn btn-default float-right">
+        <i class="glyphicon glyphicon-edit"></i>
+        Ajouter un mapping Travel Agent
+    </a>
+    <div class="col-md-12">
+        {% if pagination.pages_count > 0 %}
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Champ PMS</th>
+                <th>Champ Mappé</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for travelagentMapping in travelagentMappingsList %}
+                <tr>
+                    <th scope="row">{{ travelagentMapping.id }}</th>
+                    <td>{{ travelagentMapping.originalField }}</td>
+                    <td>{{ travelagentMapping.mappedField }}</td>
+                    <td><a href="{{ path('datamart_mappings_travelagent_edit', {'id': travelagentMapping.id}) }}"><i class="glyphicon glyphicon-cog"></i></a></td>
+                    <td><a href="{{ path('datamart_mappings_travelagent_delete', {'id': travelagentMapping.id}) }}"><i class="glyphicon glyphicon-trash"></i></a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+            {% include "DatamartCoreBundle::pagination.html.twig" %}
+        {% else %}
+            <p>Aucun mapping Travel Agent</p>
+        {% endif %}
+    </div>
+{% endblock %}

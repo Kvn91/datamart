@@ -1,0 +1,4 @@
+services:
+#    datamart_core.example:
+#        class: Datamart\CoreBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
