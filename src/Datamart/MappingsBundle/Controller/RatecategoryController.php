@@ -13,6 +13,7 @@ use Datamart\MappingsBundle\Entity\Ratecategory;
 use Datamart\MappingsBundle\Form\RatecategoryType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class RatecategoryController extends Controller
 {

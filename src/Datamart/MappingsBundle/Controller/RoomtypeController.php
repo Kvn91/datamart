@@ -12,6 +12,7 @@ use Datamart\MappingsBundle\Entity\Roomtype;
 use Datamart\MappingsBundle\Form\RoomtypeType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class RoomtypeController extends Controller
 {

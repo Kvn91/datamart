@@ -13,6 +13,7 @@ use Datamart\MappingsBundle\Entity\Civility;
 use Datamart\MappingsBundle\Form\CivilityType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class CivilityController extends Controller
 {

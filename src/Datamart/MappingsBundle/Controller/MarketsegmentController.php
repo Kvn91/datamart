@@ -13,6 +13,7 @@ use Datamart\MappingsBundle\Entity\Marketsegment;
 use Datamart\MappingsBundle\Form\MarketsegmentType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class MarketsegmentController extends Controller
 {

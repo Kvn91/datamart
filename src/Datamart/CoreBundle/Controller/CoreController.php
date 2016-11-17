@@ -21,8 +21,6 @@ class CoreController extends Controller
             $expression = $request->request->get('search')['expression'];
             $em = $this->getDoctrine()->getManager();
             $civilityRepo = $em->getRepository('DatamartMappingsBundle:Civility');
-            
-            var_dump($expression);exit;
         }
 
         return $this->render('DatamartCoreBundle::search.html.twig', array(

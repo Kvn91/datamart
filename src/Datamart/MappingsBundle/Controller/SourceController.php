@@ -13,6 +13,7 @@ use Datamart\MappingsBundle\Entity\Source;
 use Datamart\MappingsBundle\Form\SourceType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class SourceController extends Controller
 {

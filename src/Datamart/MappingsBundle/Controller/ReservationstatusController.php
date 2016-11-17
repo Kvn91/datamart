@@ -13,6 +13,7 @@ use Datamart\MappingsBundle\Entity\Reservationstatus;
 use Datamart\MappingsBundle\Form\ReservationstatusType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class ReservationstatusController extends Controller
 {

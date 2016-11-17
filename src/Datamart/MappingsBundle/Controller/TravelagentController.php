@@ -13,6 +13,7 @@ use Datamart\MappingsBundle\Entity\Travelagent;
 use Datamart\MappingsBundle\Form\TravelagentType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class TravelagentController extends Controller
 {
